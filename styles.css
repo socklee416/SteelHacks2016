@@ -34,11 +34,20 @@ td {
     padding: 2px;
 }
 
-#wrapper {
-  margin-left: 270px;
-  width:1600px;
-  clear:both;
+div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
+
+#wrapper {
+    width: 1600px;
+    clear: both;
+}
+
 #red:hover,
 #blue:hover,
 #green:hover,
@@ -49,71 +58,78 @@ td {
 #purple:hover,
 #navy:hover {
     -webkit-transition: transform .8s ease-out;
-    transform: scale(.1,.1); 
     animation-fill-mode: forwards;
     display: inline-block;
 }
-#red {
-  background-color:red;
-  height:800px;
-  width:800px;
-  margin: auto;
-  border-radius: 800px;
-  display: inline-block;
+
+#gradient-8 {
+    background-color: #0079c1;
+    height: 800px;
+    width: 800px;
+    margin: auto;
+    border-radius: 800px;
+    display: inline-block;
 }
-#blue {
-  background-color: blue;
-  height:700px;
-  width:700px;
-  float:left;
-  border-radius: 700px;
-  display: inline-block;
+
+#gradient-7 {
+    background-color: #0068c1;
+    height: 700px;
+    width: 700px;
+    float: left;
+    border-radius: 700px;
+    display: inline-block;
 }
-#green {
-  background-color:lime;
-  height:600px;
-  width:600px;
-  margin: auto;
-  border-radius: 600px;
-  display: inline-block;
+
+#gradient-6{
+    background-color: #0057c1;
+    height: 600px;
+    width: 600px;
+    margin: auto;
+    border-radius: 600px;
+    display: inline-block;
 }
-#cyan {
-  background-color:cyan;
-  height:500px;
-  width:500px;
-  margin: auto;
-  border-radius: 500px;
-  display: inline-block;
+
+#gradient-5 {
+    background-color: #0046c1;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    border-radius: 500px;
+    display: inline-block;
 }
-#yellow {
-  background-color:yellow;
-  height:400px;
-  width:400px;
-  margin: auto;
-  border-radius: 400px;
-  display: inline-block;
+
+#gradient-4 {
+    background-color: #0035c1;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    border-radius: 400px;
+    display: inline-block;
 }
-#navy {
-  background-color:darkblue;
-  height:300px;
-  width:300px;
-  margin: auto;
-  border-radius: 300px;
-  display: inline-block;
+
+#gradient-3 {
+    background-color: #0024c1;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    border-radius: 300px;
+    display: inline-block;
 }
-#orange {
-  background-color:orange;
-  height:200px;
-  width:200px;
-  margin: auto;
-  border-radius: 200px;
-  display: inline-block;
+
+#gradient-2{
+    background-color: #0013c1;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    border-radius: 200px;
+    display: inline-block;
 }
-#purple {
-  background-color:darkviolet;
-  height:100px;
-  width:100px;
-  margin: auto;
-  border-radius: 100px;
-  display: inline-block;
+
+#gradient-1 {
+    background-color: #0002c1;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    border-radius: 100px;
+    display: inline-block;
 }
