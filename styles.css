@@ -34,6 +34,7 @@ td {
 }
 
 #wrapper {
+  margin-left: 270px;
   width:1600px;
   clear:both;
 }
@@ -46,8 +47,7 @@ td {
 #cyan:hover,
 #purple:hover,
 #navy:hover {
-    -webkit-transition: transform 1s ease-in;
-    -webkit-transition: transform 1s ease-out;
+    -webkit-transition: transform .5s ease-out;
     transform: scale(.1,.1); 
 }
 #red {
