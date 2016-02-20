@@ -1,0 +1,106 @@
+h2 {
+    color: gray;
+    font-family: helvetica;
+    font-size: 300%;
+}
+
+p {
+    color: gray;
+    font-family: helvetica;
+    font-size: 100%;
+}
+
+form {
+    color: gray;
+    font-family: helvetica;
+    font-size: 100%;
+}
+
+body {
+    background-color: #000A29;
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    color: gray;
+    padding: 2px;
+}
+
+#wrapper {
+  margin-left: 270px;
+  width:1600px;
+  clear:both;
+}
+#red:hover,
+#blue:hover,
+#green:hover,
+#orange:hover,
+#yellow:hover,
+#pink:hover,
+#cyan:hover,
+#purple:hover,
+#navy:hover {
+    -webkit-transition: transform .5s ease-out;
+    transform: scale(.1,.1); 
+}
+#red {
+  background-color:red;
+  height:80px;
+  width:100px;
+  float:left;
+}
+#blue {
+  background-color: blue;
+  height:80px;
+  width:100px;
+  float:left;
+}
+#green {
+  background-color:lime;
+  height:80px;
+  width:100px;
+  float:left;
+}
+#orange {
+  background-color:orange;
+  height:80px;
+  width:100px;
+  float:left;
+}
+#pink {
+  background-color:magenta;
+  height:80px;
+  width:100px;
+  float:left;
+}
+#cyan {
+  background-color:cyan;
+  height:80px;
+  width:100px;
+  float:left;
+}
+#yellow {
+  background-color:yellow;
+  height:80px;
+  width:100px;
+  float:left;
+}
+#navy {
+  background-color:darkblue;
+  height:80px;
+  width:100px;
+  float:left;
+}
+#purple {
+  background-color:darkviolet;
+  height:80px;
+  width:100px;
+  float:left;
+}
