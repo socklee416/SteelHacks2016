@@ -1,3 +1,4 @@
+// GdravenOrengarD
 h2 {
     color: gray;
     font-family: helvetica;
@@ -47,60 +48,72 @@ td {
 #cyan:hover,
 #purple:hover,
 #navy:hover {
-    -webkit-transition: transform .5s ease-out;
+    -webkit-transition: transform .8s ease-out;
     transform: scale(.1,.1); 
+    animation-fill-mode: forwards;
+    display: inline-block;
 }
 #red {
   background-color:red;
-  height:80px;
-  width:100px;
-  float:left;
+  height:800px;
+  width:800px;
+  margin: auto;
+  border-radius: 800px;
+  display: inline-block;
 }
 #blue {
   background-color: blue;
-  height:80px;
-  width:100px;
+  height:700px;
+  width:700px;
   float:left;
+  border-radius: 700px;
+  display: inline-block;
 }
 #green {
   background-color:lime;
-  height:80px;
-  width:100px;
-  float:left;
-}
-#orange {
-  background-color:orange;
-  height:80px;
-  width:100px;
-  float:left;
-}
-#pink {
-  background-color:magenta;
-  height:80px;
-  width:100px;
-  float:left;
+  height:600px;
+  width:600px;
+  margin: auto;
+  border-radius: 600px;
+  display: inline-block;
 }
 #cyan {
   background-color:cyan;
-  height:80px;
-  width:100px;
-  float:left;
+  height:500px;
+  width:500px;
+  margin: auto;
+  border-radius: 500px;
+  display: inline-block;
 }
 #yellow {
   background-color:yellow;
-  height:80px;
-  width:100px;
-  float:left;
+  height:400px;
+  width:400px;
+  margin: auto;
+  border-radius: 400px;
+  display: inline-block;
 }
 #navy {
   background-color:darkblue;
-  height:80px;
-  width:100px;
-  float:left;
+  height:300px;
+  width:300px;
+  margin: auto;
+  border-radius: 300px;
+  display: inline-block;
+}
+#orange {
+  background-color:orange;
+  height:200px;
+  width:200px;
+  margin: auto;
+  border-radius: 200px;
+  display: inline-block;
 }
 #purple {
   background-color:darkviolet;
-  height:80px;
+  height:100px;
   width:100px;
-  float:left;
+  margin: auto;
+  border-radius: 100px;
+  display: inline-block;
 }
