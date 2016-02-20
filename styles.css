@@ -48,18 +48,17 @@ div {
     clear: both;
 }
 
-#red:hover,
-#blue:hover,
-#green:hover,
-#orange:hover,
-#yellow:hover,
-#pink:hover,
-#cyan:hover,
-#purple:hover,
-#navy:hover {
-    -webkit-transition: transform .8s ease-out;
-    animation-fill-mode: forwards;
-    display: inline-block;
+#gradient-8:hover,
+#gradient-7:hover,
+#gradient-6:hover,
+#gradient-5:hover,
+#gradient-4:hover,
+#gradient-3:hover,
+#gradient-2:hover,
+#gradient-1:hover{
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
 }
 
 #gradient-8 {
@@ -69,6 +68,7 @@ div {
     margin: auto;
     border-radius: 800px;
     display: inline-block;
+    vv
 }
 
 #gradient-7 {
