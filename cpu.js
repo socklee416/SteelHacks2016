@@ -19,8 +19,8 @@ function makeGuess(user_guess) {
 	var max_miss = 10;
 	
 	while (!hit) {
-		x = Math.floor((Math.random() * 10);		//Choose a start point
-		y = Math.floor((Math.random() * 10);
+		x = Math.floor(Math.random() * 10);		//Choose a start point
+		y = Math.floor(Math.random() * 10);
 		comp_guess.push(x);
 		comp_guess.push(y);	
 		for (var i = 0; i < coord_vals; i=i+2) {
@@ -49,7 +49,7 @@ function makeGuess(user_guess) {
 		while (!new_coord) {
 			new_coord = true;
 			if (!dir)
-				direction = Math.floor((Math.random() * 4);	//Pick a direction to branch from		
+				direction = Math.floor(Math.random() * 4);	//Pick a direction to branch from		
 			if (direction == 0) {			//Go right
 				x2 = x + 1;
 			}
@@ -93,4 +93,52 @@ function makeGuess(user_guess) {
 			}
 		}
 	}
+}
+
+function takeTurn() {
+	var length = Math.floor((Math.random() * 5) + 1);
+	x = Math.floor(Math.random() * 10);		//Choose a start point
+	y = Math.floor(Math.random() * 10);
+	var direction;
+	var comp_move = [];
+	comp_move.push(x);
+	comp_move.push(y);
+	
+	var dir = false;
+	while (!dir) {
+		direction = Math.floor(Math.random() * 4);	//Pick a direction to branch from		
+		if (direction == 0) {			//Go right
+			if (x+length <= 10)
+				dir = true
+		}
+		else if (direction == 1) {		//Up
+			if (y+length <= 10)
+				dir = true
+		}
+		else if (direction == 2) {		//Left
+			if (x-length >= 0)
+				dir = true
+		}
+		else {							//Down
+			if (y-length >= 0)
+				dir = true
+		}
+	}
+	for (i = 0; i < length; i++) {
+		if (direction == 0) {			//Go right
+			x = x + 1;
+		}
+		else if (direction == 1) {		//Up
+			y = y + 1;
+		}
+		else if (direction == 2) {		//Left
+			x = x - 1;
+		}
+		else {							//Down
+			y = y - 1;
+		}
+		comp_move.push(x);
+		comp_move.push(y);
+	}
+	return comp_move;
 }
