@@ -10,7 +10,7 @@ function placeMarkerAndPanTo(latLng, map,flag) {
     });
     marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
     if(flag < 0) {
-        
+
     $("#output").append("<li>" + latLng + "</li>")
     map.panTo(latLng);
     }
@@ -36,7 +36,7 @@ function initMap() {
     });
     if (sPage == "set_event.html") {
         map.addListener('click', function(e) {
-            placeMarkerAndPanTo(e.latLng, map);
+            placeMarkerAndPanTo(e.latLng, map,-1);
         });
     } else if (sPage == "find_free.html") {
         rand = true;
