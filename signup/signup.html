@@ -28,7 +28,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <body>
     <div class="main">
     <h1>Scout Snout</h1>
-        <h2>Signup</h2>
+        <h1>Signup</h1>
         <form>
             <div class="lable">
                 <div class="col_1_of_2 span_1_of_2">
@@ -44,15 +44,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <input type="password" class="text" value="Password " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password ';}">
             </div>
             <div class="submit">
-                <input type="submit" onclick="myFunction()" value="Create account">
+                <div class="col_1_of_2 span_1_of_2">
+                    <input type="button" onclick="myFunction()" value="Sign Up As User">
+                </div>
+                <div class="col_1_of_2 span_1_of_2">
+                    <input type="button" onclick="location.href = 'eventregistration.html';" value="Sign Up As Organization">
+                </div>
             </div>
             <div class="clear"> </div>
         </form>
         <!-----//end-main---->
     </div>
-    <div class="copy-right">
-    </div>
-    <!-----//end-copyright---->
+
 </body>
 
 </html>

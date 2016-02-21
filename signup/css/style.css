@@ -26,10 +26,19 @@ footer {
 
 .main {
     background-color: #00a0af;
-    margin: 7em auto 0;
+    margin: 5em auto 0;
     width: 44%;
 }
-
+.main h1{
+    background-image: url("image.jpg");
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    padding: 1em 0;
+    font-family: 'Oxygen', sans-serif;
+}
+    
+}
 .main h2,
 .main h3 {
     background-image: url("image.jpg");
@@ -116,7 +125,7 @@ input[type="Password"] {
     text-align: center;
 }
 
-input[type=submit] {
+input[type=button] {
     padding: 17px 30px;
     color: #fff;
     float: right;
