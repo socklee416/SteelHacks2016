@@ -7,7 +7,11 @@ body {
     margin: 0;
     padding: 0;
 }
-
+h1{
+	font-size:5em;
+	color: white;
+	font-family: 'Oxygen',sans-serif;
+}
 footer {
     height: 5%;
 }

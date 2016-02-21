@@ -1,0 +1,19 @@
+html,
+body {
+    background-color: #00a0af;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    height: 5%;
+}
+
+#banner {
+    height: 55%;
+}
+
+#map {
+    height: 40%;
+}
