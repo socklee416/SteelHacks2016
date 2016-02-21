@@ -19,8 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `food events`
 --
-CREATE DATABASE IF NOT EXISTS `food events` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `food events`;
+CREATE DATABASE IF NOT EXISTS `Food Events` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `Food Events`;
 
 -- --------------------------------------------------------
 
@@ -28,7 +28,7 @@ USE `food events`;
 -- Table structure for table `events`
 --
 
-CREATE TABLE `events` (
+CREATE TABLE `Events` (
   `Organization` varchar(50) NOT NULL,
   `Event` varchar(50) NOT NULL,
   `Location` varchar(50) NOT NULL,
@@ -43,8 +43,27 @@ CREATE TABLE `events` (
 -- Dumping data for table `events`
 --
 
-INSERT INTO `events` (`Organization`, `Event`, `Location`, `Latitude`, `Longitude`, `Date`, `Start Time`, `End Time`) VALUES
+INSERT INTO `Events` (`Organization`, `Event`, `Location`, `Latitude`, `Longitude`, `Date`, `Start Time`, `End Time`) VALUES
 ('University of Pittsburgh', 'SteelHacks', 'William Pitt Union', 41, -79, '2016-02-20', '09:00:00', '11:59:59');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `events`
+--
+
+CREATE TABLE `Organizations` (
+  `Organization` varchar(50) NOT NULL,
+  `Email` varchar(50) NOT NULL,
+  `Password` varchar(50) NOT NULL,
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Event information';
+
+--
+-- Dumping data for table `events`
+--
+
+INSERT INTO `Organizations` (`Organization`, `Email`, `Password`) VALUES
+('University of Pittsburgh', 'saj72@pitt.edu', 'St33lH@cks02');
 
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
