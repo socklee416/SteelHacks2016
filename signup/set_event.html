@@ -5,6 +5,7 @@
     <title>Set your event!</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
     <style>
     html,
     body {
@@ -20,17 +21,43 @@
     
     #banner {
         height: 55%;
+        width:50%;
     }
     
     #map {
         height: 40%;
     }
     </style>
+
 </head>
 
 <body>
     <div id="banner">
         <div id="output"></div>
+        <h1>Event Registration</h1>
+        <form>
+            <div class="lable-2">
+                <input type="text" class="text" value="Organization Name " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Organization Name;}">
+           </div>
+            <div class="lable-2">
+                <input type="text" class="text" value="Event Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Event Name;}">
+           </div>
+           <div class="lable">
+                <div class="col_1_of_2 span_1_of_2">    <input type="text" class="text" value="Start Time" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Start Time';}" id="active"></div>
+           </div>
+           <div class = "lable">
+                <div class="col_1_of_2 span_1_of_2"><input type="text" class="text" value="End Time" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'End Time';}">    </div>
+                <div class="clear"> </div>
+            </div>
+           <div class="submit">
+              <input type="button" onclick="myFunction()" value="Submit Event" >
+            
+           </div>
+           <div class="clear"> </div>
+        </form>
+        <!-----//end-main---->
+        </div>
+        
     </div>
     <div id="map"></div>
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
